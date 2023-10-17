@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kütüphane Uygulaması</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<header>
+<div>
+<h1>Kütüphane</h1>
+<button id="Toggle">+</button>
+</div>
+<div>
+<input type="text" name="" id="searchbooks" placeholder="Kitap Ara">
+<button id="Search">🔎</button>
+
+</div>
+</header>
+
+<div class="addbook hidden" id="Form">
+
+<input type="text" name="" placeholder="Adı" id="title">
+<input type="text" name="" placeholder="Yazarı" id="author">
+<input type="number" name="" placeholder="Sayfa Sayısı" id="pagenumber">
+<input type="number" name="" placeholder="ISBN" id="ISBN">
+
+<div class="">
+<h3>Kitap Kütüphanede mi?</h3>
+<input type="checkbox" name="" id="isinlibrary" checked>
+</div>
+
+<div class="borrowerinfo hidden">
+
+<input type="text" name="" placeholder="Alanın Adı-Soyadı ?" id="Nameofborrower">
+<input type="tel" name="" placeholder="Alanın Numarası ?" id="Numberofborrower">
+
+</div>
+
+<button class="AddBook" id="AddBtn">Add Book</button>
+
+</div>
+
+<div class="showborrowerinfo hidden">
+
+<p class="name">1234</p>
+<P class="number">1244</P>
+<button id="retrievebook">Kitabı Geri Al</button>
+<button id="CloseTab">Pencereyi Kapat</button>
+
+</div>
+
+<div class="borrowbook hidden"> 
+
+<input type="text" name="" placeholder="Alanın Adı-Soyadı ?" id="Nameofborrower2">
+<input type="tel" name="" placeholder="Alanın Numarası ?" id="Numberofborrower2">
+
+<button id="Borrow">Ödünç Ver</button>
+<button id="giveup">Vaz Geç</button>
+
+</div>
+
+<main class="gridmode"></main>
+
+
+<script type="module" src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,480 @@
+body {
+
+font-family:'Courier New', Courier, monospace;
+margin: 0;
+padding: 0;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+overflow-x: hidden;
+}
+    
+header {
+    
+margin-top: 0;
+background-color: rgb(240, 240, 240);
+width: 100vw;
+height: 12vh;
+display: flex;
+align-items: center;
+justify-content: space-around;
+margin-bottom: 1.8rem;
+    
+}
+
+header div {
+
+display: flex;
+align-items: center;
+justify-content: space-around;
+
+}
+    
+header h1 {
+    
+color: orange;
+margin-right: 3rem;
+    
+}
+    
+header button {
+    
+background-color: orange;
+border: none;
+width: 80px;
+height: 40px;
+border-radius: 12px;
+font-size: 21px;
+color: white;
+font-weight: bold;
+cursor: pointer;
+transition: all 0.4s;
+margin-right: 3rem;
+}
+    
+header button:hover {
+    
+background-color: rgb(215, 141, 4);
+width: 83px;
+height: 43px;
+border-radius: 13px;
+font-size: 22px;
+font-weight: bolder;    
+        
+}
+
+
+header input::placeholder {
+
+color: orange;
+    
+}
+
+header input {
+
+margin-right: 2.4rem;
+
+}
+    
+.addbook {
+
+margin-top: 3rem;
+background-color: rgb(236, 216, 178);
+width: 360px;
+border-radius: 12px;
+box-shadow: 1px 1px lightpink;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-around;
+height: 24rem;
+
+}
+    
+input[type=text], input[type=number],input[type=tel] {
+    
+height: 34px;
+border-radius: 8px;
+border: none;
+text-indent: 12px;
+font-family: inherit;
+font-weight: bold;
+    
+}
+    
+input[type=text]:focus,input[type=number]:focus,input[type=tel]:focus {
+    
+outline: none;
+        
+}
+    
+.addbook div {
+    
+display: flex;
+justify-content: space-around;
+    
+}
+    
+input[type=checkbox] {
+    
+margin-left: 1rem;
+width: 18px;
+accent-color: orange;
+            
+}
+    
+.addbook button {
+    
+width: 124px;
+height: 42px;
+border: none;
+background-color: orangered;
+color: white;
+font-family: inherit;
+font-weight: bold;
+font-size: 16px;
+border-radius: 6px;
+cursor: pointer;
+transition: all 0.5s;
+    
+}
+    
+.addbook button:hover {
+    
+width: 128px;
+height: 46px;
+border: none;
+background-color: rgb(156, 42, 0);
+font-weight: bolder;
+font-size: 17px;
+border-radius: 7px;
+        
+}
+
+.gridmode {
+
+display: grid;
+grid-template-columns: 60px 60px 140px;
+grid-template-rows: 120px 120px 120px 120px;
+gap: 200px;
+
+
+}
+
+.flexmode {
+
+display: flex;
+
+
+}
+
+.mainflexmode {
+
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+
+.hidden {
+
+display: none;
+visibility: hidden;
+width: 0px;
+height: 0px;
+padding: 0;
+
+
+}
+ 
+.searched {
+
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+
+.bookwrapper {
+
+box-shadow: 4px 4px;
+background-color :rgb(255, 242, 220);
+border-radius: 6px;
+width: 180px;
+height: 300px;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+}
+
+.bookwrapper p {
+
+font-weight: bold;
+font-size: 18px;
+
+}
+
+.bookwrapper button:first-of-type {
+
+font-family: inherit;
+width: 120px;
+height: 40px;
+margin-bottom: 0.6rem;
+border: none;
+background-color: orange;
+border-radius: 6px;
+color: white;
+font-weight: bold;
+cursor: pointer;
+transition: all 0.3s;
+
+
+}
+
+.bookwrapper button:last-of-type {
+
+font-family: inherit;
+width: 120px;
+height: 40px;
+margin-bottom: 0.6rem;
+border: none;
+background-color: indianred;
+border-radius: 6px;
+color: white;
+font-weight: bold;
+cursor: pointer;
+transition: all 0.3s;
+    
+}
+
+.bookwrapper button:last-of-type:hover {
+
+font-family: inherit;
+width: 130px;
+height: 44px;
+margin-bottom: 0.6rem;
+border: none;
+background-color: rgb(207, 77, 77);
+border-radius: 7px;
+color: white;
+font-weight: bolder;
+cursor: pointer;
+font-size: 15px;
+        
+}
+
+.bookwrapper button:first-of-type:hover {
+
+font-family: inherit;
+width: 130px;
+height: 44px;
+margin-bottom: 0.6rem;
+border: none;
+background-color: rgb(191, 124, 0);
+border-radius: 7px;
+color: white;
+font-weight: bolder;
+cursor: pointer;
+font-size: 15px;
+        
+}
+
+.borrowerinfo {
+
+flex-direction: column;
+justify-content:space-between;
+align-items: center;
+border-radius: 12px;
+background-color: rgb(208, 171, 102);
+
+}
+
+.showborrowerinfo {
+
+border-radius: 12px;
+box-shadow: 2px 2px orange;
+background-color: rgb(255, 242, 218);
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-around;
+
+}
+
+.showborrowerinfo button:first-of-type {
+
+font-family: inherit;
+width: 120px;
+height: 40px;
+margin-bottom: 0.6rem;
+border: none;
+background-color: orange;
+border-radius: 6px;
+color: white;
+font-weight: bold;
+cursor: pointer;
+transition: all 0.3s;
+
+}
+
+.showborrowerinfo button:last-of-type {
+
+font-family: inherit;
+width: 120px;
+height: 40px;
+margin-bottom: 0.6rem;
+border: none;
+background-color: rgb(207, 77, 77);
+border-radius: 6px;
+color: white;
+font-weight: bold;
+cursor: pointer;
+transition: all 0.3s;
+
+}
+
+
+
+.showborrowerinfo button:first-of-type:hover {
+
+font-family: inherit;
+width: 130px;
+height: 44px;
+margin-bottom: 0.6rem;
+border: none;
+background-color: rgb(191, 124, 0);
+border-radius: 7px;
+color: white;
+font-weight: bolder;
+cursor: pointer;
+font-size: 15px;
+            
+}
+    
+
+.showborrowerinfo button:last-of-type:hover {
+
+font-family: inherit;
+width: 130px;
+height: 44px;
+margin-bottom: 0.6rem;
+border: none;
+background-color: rgb(200, 56, 56);
+border-radius: 7px;
+color: white;
+font-weight: bolder;
+cursor: pointer;
+font-size: 15px;        
+}
+
+.borrowbook {
+
+
+background-color: rgb(236, 216, 178);
+border-radius: 12px;
+box-shadow: 2px 2px orange;
+display: flex;
+align-items: center;
+flex-direction: column;
+justify-content: space-around;
+
+}
+
+.borrowbook button:first-of-type {
+
+font-family: inherit;
+width: 120px;
+height: 40px;
+margin-bottom: 0.6rem;
+border: none;
+background-color: orange;
+border-radius: 6px;
+color: white;
+font-weight: bold;
+cursor: pointer;
+transition: all 0.3s;
+    
+}
+    
+.borrowbook button:last-of-type {
+    
+font-family: inherit;
+width: 120px;
+height: 40px;
+margin-bottom: 0.6rem;
+border: none;
+background-color: rgb(207, 77, 77);
+border-radius: 6px;
+color: white;
+font-weight: bold;
+cursor: pointer;
+transition: all 0.3s;
+    
+}  
+    
+.borrowbook button:first-of-type:hover {
+    
+font-family: inherit;
+width: 130px;
+height: 44px;
+margin-bottom: 0.6rem;
+border: none;
+background-color: rgb(191, 124, 0);
+border-radius: 7px;
+color: white;
+font-weight: bolder;
+cursor: pointer;
+font-size: 15px;
+                
+}    
+    
+.borrowbook button:last-of-type:hover {
+    
+font-family: inherit;
+width: 130px;
+height: 44px;
+margin-bottom: 0.6rem;
+border: none;
+background-color: rgb(200, 56, 56);
+border-radius: 7px;
+color: white;
+font-weight: bolder;
+cursor: pointer;
+font-size: 15px;        
+}
+
+section {
+
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+
+section div {
+
+margin-left: 2rem;
+margin-right: 2rem;
+
+}
+
+
+.message {
+
+position: fixed;
+top: 80px;
+background-color: orange;
+border-radius: 12px;
+width: 180px;
+text-align: center;
+
+}
+
+.message p {
+
+color: white;
+font-weight: bold;
+    
+}
