@@ -9,19 +9,7 @@ const appSettings = {
 databaseURL:"https://library-6d4d3-default-rtdb.europe-west1.firebasedatabase.app/"
 
 }
-/*
-// Your web app's Firebase configuration
-const firebaseConfig = {
-apiKey: "AIzaSyBNZisZO0nM9Gm5sfbEYTstzIChxXtR2r8",
-authDomain: "library-6d4d3.firebaseapp.com",
-projectId: "library-6d4d3",
-storageBucket: "library-6d4d3.appspot.com",
-messagingSenderId: "188604304573",
-appId: "1:188604304573:web:de2b437a7e9e791dd1bbd4"
-};
-*/
 
-  // Initialize Firebase
 const app = initializeApp(appSettings);
 const database = getDatabase(app)
 const Library = ref(database, "Library")
